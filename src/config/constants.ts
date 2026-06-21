@@ -24,6 +24,10 @@ export const SITE_CONFIG = {
     ml_privacy: {
       github: 'https://github.com/Sambhav10-10/AppDataCollectionPredictor', // Update with actual repo
       live: 'https://appdatacollectionpredictor.onrender.com/' // Add live link if available
+    },
+    docnest: {
+      github: 'https://github.com/Sambhav10-10/DocNest', // Update with actual repo
+      live: 'https://doc-nest-m1ku.vercel.app/' // Add live link if available
     }
   }
 }

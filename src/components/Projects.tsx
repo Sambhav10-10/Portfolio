@@ -5,6 +5,7 @@ import { SITE_CONFIG } from '../config/constants'
 import turfmateCover from '../assets/jerseyhub-cover.webp'
 import identraCover from '../assets/envoy-cover-2.webp'
 import mlCover from '../assets/relay-cover.webp'
+import docnestCover from '../assets/docnest-cover.webp'
 const Projects: React.FC = () => {
   const projectList: ProjectItem[] = [
     {
@@ -34,6 +35,26 @@ const Projects: React.FC = () => {
       liveUrl: SITE_CONFIG.projects.ml_privacy.live,
       imageUrl: mlCover
     },
+    {
+      title: 'DocNest — Healthcare Appointment Booking System',
+      description1: 'A full-stack healthcare platform that connects patients with doctors through seamless appointment scheduling, real-time slot management, secure JWT authentication, and role-based access for patients, doctors, and administrators.',
+      description2: 'Built with React, Node.js, Express, and MongoDB, featuring Cloudinary image uploads, Razorpay and Stripe payment integration, doctor management dashboards, appointment tracking, earnings analytics, and responsive user experiences across all devices.',
+      tags: [
+        'React.js',
+        'Node.js',
+        'Express.js',
+        'MongoDB',
+        'JWT',
+        'Cloudinary',
+        'Razorpay',
+        'Stripe',
+        'Tailwind CSS',
+        'REST API'
+      ],
+      githubUrl: SITE_CONFIG.projects.docnest.github,
+      liveUrl: SITE_CONFIG.projects.docnest.live,
+      imageUrl: docnestCover
+    }
   ]
 
   return (
