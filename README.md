@@ -1,15 +1,27 @@
-# Nirooz VP — Portfolio
+# Portfolio — Sambhav Koshta
 
-Personal portfolio website built with React 19, TypeScript, Vite, and Tailwind CSS 4.
+Personal developer portfolio built with React 19, TypeScript, Vite, and Tailwind CSS 4. Features full dark/light mode support.
+
+## Live Site
+
+[sambhavkoshta.dev](https://sambhavkoshta.dev) <!-- replace with your actual URL -->
 
 ## Tech Stack
 
 - **React 19** — UI framework
 - **TypeScript** — Type safety
 - **Vite 8** — Build tool
-- **Tailwind CSS 4** — Utility-first CSS
+- **Tailwind CSS 4** — Utility-first CSS with dark mode
 - **lucide-react** — Icons
 - **@emailjs/browser** — Contact form delivery
+
+## Features
+
+- Dark / light mode toggle
+- Project showcase (TurfMate, Identra AI, App Data Collection Predictor)
+- GitHub contribution graph
+- EmailJS-powered contact form
+- Fully responsive layout
 
 ## Getting Started
 
@@ -29,20 +41,24 @@ npm run preview
 
 ## Environment Variables
 
-| Variable | Description |
-|---|---|
-| `VITE_EMAIL` | Recipient email for contact form |
-| `VITE_EMAILJS_SERVICE_ID` | EmailJS service ID |
-| `VITE_EMAILJS_TEMPLATE_ID` | EmailJS template ID |
-| `VITE_EMAILJS_PUBLIC_KEY` | EmailJS public key |
+Create a `.env` file in the root:
+
+```env
+VITE_EMAIL=your-email@example.com
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_template_id
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+Get these values from [EmailJS](https://emailjs.com).
 
 ## Deploy to Vercel
 
 1. Push to GitHub
-2. Import repo in Vercel
+2. Import the repo in [Vercel](https://vercel.com)
 3. Set build command: `npm run build`
 4. Set output directory: `dist`
-5. Add the environment variables above in Vercel project settings
+5. Add environment variables in Vercel project settings
 
 ## Project Structure
 
@@ -66,3 +82,13 @@ src/
     Navbar.tsx             — Sidebar / bottom nav
     GitHub.tsx             — GitHub contribution graph
 ```
+
+## About Me
+
+B.Tech CSE student at **MANIT Bhopal** (2023–present). I build full-stack web apps and ML tools. Featured projects include a sports turf booking platform, an AI-powered eBook creator, and a privacy analysis ML tool. Active on [LeetCode](https://leetcode.com) and [Codeforces](https://codeforces.com) with 500+ DSA problems solved.
+
+## Contact
+
+- Email: koshtasambhav18@gmail.com
+- LinkedIn: [linkedin.com/in/sambhavkoshta](https://linkedin.com/in/sambhavkoshta10) <!-- update link -->
+- GitHub: [github.com/sambhavkoshta](https://github.com/Sambhav10-10) <!-- update link -->
