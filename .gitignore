@@ -1,0 +1,24 @@
+node_modules
+dist
+.env
+.agents
+design.md
+
+# Font source directories (files are copied to public/fonts/)
+Satoshi_Complete/
+saans-font-family/
+
+# Windows junk
+desktop.ini
+Thumbs.db
+
+# Auto-generated opencode skill lock
+skills-lock.json
+
+
+
+# Unused/broken images
+src/assets/hero.png
+src/assets/hero2.png
+src/assets/cover-1.jpg
+src/assets/envoy-conver-2.png
