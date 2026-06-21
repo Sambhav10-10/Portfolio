@@ -41,7 +41,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
       return <WebDevIllustration />
     }
     if (title.includes('api') || title.includes('backend')) {
-      return <WebDevIllustration />
+      return <UIUXIllustration />
     }
     if (title.includes('machine learning') || title.includes('integration') || title.includes('ai')) {
       return <AutomationIllustration />

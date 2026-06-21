@@ -1,24 +1,29 @@
 import React from 'react'
 
-// Import SVG Assets
-import awsIcon from '../assets/tech-stack/AWS.svg'
-import kafkaIcon from '../assets/tech-stack/Apache Kafka.svg'
+// Currently Used
 import dockerIcon from '../assets/tech-stack/Docker.svg'
 import gitIcon from '../assets/tech-stack/Git.svg'
-import githubActionsIcon from '../assets/tech-stack/GitHub Actions.svg'
 import githubIcon from '../assets/tech-stack/GitHub.svg'
+import postgresIcon from '../assets/tech-stack/PostgresSQL.svg'
+import tailwindIcon from '../assets/tech-stack/Tailwind CSS.svg'
+import typescriptIcon from '../assets/tech-stack/TypeScript.svg'
+
+/*
+Unused Tech Icons (kept for future use)
+
+import awsIcon from '../assets/tech-stack/AWS.svg'
+import kafkaIcon from '../assets/tech-stack/Apache Kafka.svg'
+import githubActionsIcon from '../assets/tech-stack/GitHub Actions.svg'
 import goIcon from '../assets/tech-stack/Go.svg'
 import grafanaIcon from '../assets/tech-stack/Grafana.svg'
 import helmIcon from '../assets/tech-stack/Helm.svg'
 import nginxIcon from '../assets/tech-stack/NGINX.svg'
-import postgresIcon from '../assets/tech-stack/PostgresSQL.svg'
 import prometheusIcon from '../assets/tech-stack/Prometheus.svg'
 import redisIcon from '../assets/tech-stack/Redis.svg'
-import tailwindIcon from '../assets/tech-stack/Tailwind CSS.svg'
-import typescriptIcon from '../assets/tech-stack/TypeScript.svg'
 import k8 from '../assets/tech-stack/kubernetes.png'
 import gin from '../assets/tech-stack/gin.png'
 import fiber from '../assets/tech-stack/fiber.svg'
+*/
 
 export interface TechItem {
   name: string
