@@ -17,7 +17,7 @@ function App() {
   const [showAvatarModal, setShowAvatarModal] = useState(false)
   const [isDarkMode, setIsDarkMode] = useState(() => {
     const saved = localStorage.getItem('theme-mode')
-    return saved ? saved === 'dark' : true // Default to dark mode
+    return saved ? saved === 'light' : true // Default to dark mode
   })
   const mainRef = useRef<HTMLElement>(null)
 
