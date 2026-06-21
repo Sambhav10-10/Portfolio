@@ -84,7 +84,7 @@ export default function GithubContributionCard() {
                 </div>
 
                 <a
-                    href="https://github.com/NIROOZbx"
+                    href="https://github.com/Sambhav10-10"
                     target="_blank"
                     rel="noreferrer"
                     className="text-[10px] font-sans font-medium text-text-subheading/60 hover:text-element-black transition-colors"
