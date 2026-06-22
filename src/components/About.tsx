@@ -40,7 +40,7 @@ const About: React.FC = () => {
           </h2>
 
           {/* Experience Card */}
-          <div className="border border-[#e5e4e7] rounded-xl p-5 bg-white flex justify-between items-start hover:shadow-sm transition-all duration-300">
+         <div className="border border-element-black/10 rounded-xl p-5 bg-card-bg flex justify-between items-start hover:shadow-sm transition-all duration-300">
             <div className="flex flex-col text-left">
               <h3 className="font-heading font-bold text-lg text-text-heading leading-tight">
                 B.Tech Computer Science
@@ -49,7 +49,7 @@ const About: React.FC = () => {
                 MANIT Bhopal • CGPA: 8.18
               </span>
             </div>
-            <span className="font-sans text-[13px] text-text-subheading/60 font-medium select-none">
+           <span className="font-sans text-[13px] text-text-subheading font-medium select-none">
               2023–Present
             </span>
           </div>

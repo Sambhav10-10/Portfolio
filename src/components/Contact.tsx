@@ -61,16 +61,16 @@ const Contact: React.FC = () => {
       <ProgressIndicator />
 
       {/* Black CTA Card / Form Container */}
-      <div className="w-full max-w-[1215px] mx-auto bg-element-black text-primary-bg dark:text-element-black p-6 md:p-14 rounded-[20px] mt-6 flex flex-col items-center justify-center shadow-lg relative overflow-hidden">
+      <div className="w-full max-w-[1215px] mx-auto bg-element-black text-primary-bg p-6 md:p-14 rounded-[20px] mt-6 flex flex-col items-center justify-center shadow-lg relative overflow-hidden">
 
         {/* Subtle decorative background gradient */}
         <div className="absolute inset-0 bg-radial-gradient from-white/[0.03] to-transparent pointer-events-none" />
 
         <div className="w-full max-w-2xl mx-auto relative z-10 flex flex-col items-center">
-          <h2 className="font-heading font-bold text-3xl md:text-[42px] text-primary-bg dark:text-element-black tracking-tight mb-4 text-center">
+          <h2 className="font-heading font-bold text-3xl md:text-[42px] text-primary-bg tracking-tight mb-4 text-center">
             Ready to work with me?
           </h2>
-          <p className="font-sans text-sm md:text-base text-primary-bg/80 dark:text-text-subheading max-w-xl leading-relaxed mb-8 text-center">
+          <p className="font-sans text-sm md:text-base text-primary-bg/80 max-w-xl leading-relaxed mb-8 text-center">
             Whether you have a full project in mind or just a rough idea — drop a line below. I'll get back to you within 24 hours.
           </p>
 
@@ -97,7 +97,7 @@ const Contact: React.FC = () => {
               {/* Row 1: Name and Email */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="flex flex-col gap-1.5">
-                  <label htmlFor="name" className="font-sans text-[11px] font-bold text-primary-bg/60 dark:text-neutral-400 uppercase tracking-wider">
+                  <label htmlFor="name" className="font-sans text-[11px] font-bold text-primary-bg/60 uppercase tracking-wider">
                     Full Name
                   </label>
                   <input
@@ -107,12 +107,12 @@ const Contact: React.FC = () => {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder="John Doe"
-                    className="px-4 py-3 bg-primary-bg/5 dark:bg-white/[0.03] border border-primary-bg/20 dark:border-white/10 rounded-xl font-sans text-sm text-element-black dark:text-white placeholder-text-subheading/50 dark:placeholder-neutral-500 focus:outline-none focus:border-element-black/30 dark:focus:border-white/35 focus:bg-primary-bg/10 dark:focus:bg-white/[0.05] transition-all"
+                    className="px-4 py-3 bg-primary-bg/5 border border-primary-bg/20 rounded-xl font-sans text-sm text-primary-bg placeholder-primary-bg/40 focus:outline-none focus:border-primary-bg/40 focus:bg-primary-bg/10 transition-all"
                   />
                 </div>
 
                 <div className="flex flex-col gap-1.5">
-                  <label htmlFor="email" className="font-sans text-[11px] font-bold text-primary-bg/60 dark:text-neutral-400 uppercase tracking-wider">
+                  <label htmlFor="email" className="font-sans text-[11px] font-bold text-primary-bg/60 uppercase tracking-wider">
                     Email Address
                   </label>
                   <input
@@ -122,14 +122,14 @@ const Contact: React.FC = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="john@example.com"
-                    className="px-4 py-3 bg-primary-bg/5 dark:bg-white/[0.03] border border-primary-bg/20 dark:border-white/10 rounded-xl font-sans text-sm text-element-black dark:text-white placeholder-text-subheading/50 dark:placeholder-neutral-500 focus:outline-none focus:border-element-black/30 dark:focus:border-white/35 focus:bg-primary-bg/10 dark:focus:bg-white/[0.05] transition-all"
+                    className="px-4 py-3 bg-primary-bg/5 border border-primary-bg/20 rounded-xl font-sans text-sm text-primary-bg placeholder-primary-bg/40 focus:outline-none focus:border-primary-bg/40 focus:bg-primary-bg/10 transition-all"
                   />
                 </div>
               </div>
 
               {/* Row 2: Message */}
               <div className="flex flex-col gap-1.5">
-                <label htmlFor="message" className="font-sans text-[11px] font-bold text-primary-bg/60 dark:text-neutral-400 uppercase tracking-wider">
+                <label htmlFor="message" className="font-sans text-[11px] font-bold text-primary-bg/60 uppercase tracking-wider">
                   Tell me about your project
                 </label>
                 <textarea
@@ -139,7 +139,7 @@ const Contact: React.FC = () => {
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   placeholder="Share details about what you are building, design preferences, and timeline..."
-                  className="px-4 py-3 bg-primary-bg/5 dark:bg-white/[0.03] border border-primary-bg/20 dark:border-white/10 rounded-xl font-sans text-sm text-element-black dark:text-white placeholder-text-subheading/50 dark:placeholder-neutral-500 focus:outline-none focus:border-element-black/30 dark:focus:border-white/35 focus:bg-primary-bg/10 dark:focus:bg-white/[0.05] transition-all resize-none"
+                  className="px-4 py-3 bg-primary-bg/5 border border-primary-bg/20 rounded-xl font-sans text-sm text-primary-bg placeholder-primary-bg/40 focus:outline-none focus:border-primary-bg/40 focus:bg-primary-bg/10 transition-all resize-none"
                 />
               </div>
 
@@ -147,7 +147,7 @@ const Contact: React.FC = () => {
               <button
                 type="submit"
                 disabled={isSending}
-                className="w-full flex items-center justify-center gap-2 px-6 py-3.5 bg-primary-bg dark:bg-white hover:bg-primary-bg/90 dark:hover:bg-neutral-100 disabled:bg-primary-bg/50 dark:disabled:bg-neutral-600 text-element-black dark:text-element-black font-sans text-sm font-bold rounded-xl transition-all cursor-pointer active:scale-[0.99] select-none"
+                className="w-full flex items-center justify-center gap-2 px-6 py-3.5 bg-primary-bg hover:bg-primary-bg/90 disabled:bg-primary-bg/50 text-element-black font-sans text-sm font-bold rounded-xl transition-all cursor-pointer active:scale-[0.99] select-none"
               >
                 {isSending ? (
                   <span>Sending...</span>
@@ -181,7 +181,7 @@ const Contact: React.FC = () => {
               href={calendlyUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary-bg/5 dark:bg-white/[0.03] border border-primary-bg/20 dark:border-white/10 hover:bg-primary-bg/10 dark:hover:bg-white/[0.07] text-element-black dark:text-white rounded-full font-sans text-[13px] font-semibold transition-all cursor-pointer select-none active:scale-[0.98]"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary-bg/5 border border-primary-bg/20 hover:bg-primary-bg/10 text-primary-bg rounded-full font-sans text-[13px] font-semibold transition-all cursor-pointer select-none active:scale-[0.98]"
             >
               <Calendar size={13} strokeWidth={2.2} />
               Book a slot on my Calendar

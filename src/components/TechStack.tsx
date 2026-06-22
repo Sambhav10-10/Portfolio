@@ -65,13 +65,14 @@ const TechStack: React.FC = () => {
         {techStack.map((tech, idx) => (
           <span
             key={idx}
-            className="inline-flex items-center gap-2.5 px-5 py-2.5 bg-white border border-[#e5e4e7]/60 rounded-full text-sm font-medium text-text-subheading hover:bg-neutral-50 hover:scale-[1.02] hover:shadow-sm transition-all duration-200 select-none cursor-pointer"
+          className="inline-flex items-center gap-2.5 px-5 py-2.5 bg-card-bg border border-element-black/10 rounded-full text-sm font-medium text-text-heading hover:border-element-black/20 hover:scale-[1.02] hover:shadow-sm transition-all duration-200 select-none cursor-pointer"
           >
             {tech.image && (
               <img
                 src={tech.image}
                 alt={tech.name}
-                className="w-5 h-5 object-contain"
+               className="w-5 h-5 object-contain"
+style={{ filter: 'var(--icon-filter)' }}
                 onError={(e) => {
                   (e.currentTarget as HTMLImageElement).style.display = 'none'
                 }}

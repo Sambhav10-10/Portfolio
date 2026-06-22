@@ -26,11 +26,11 @@ const Home: React.FC<HomeProps> = ({ onViewProjects, onGetInTouch }) => {
           {/* Get in touch CTA (Black Pill Button) */}
           <button
             onClick={onGetInTouch}
-            className="w-[180px] h-[44px] rounded-[100px] bg-element-black hover:bg-neutral-800 text-white flex items-center justify-between pl-6 pr-2.5 font-sans text-[14px] font-bold transition-all active:scale-[0.98] cursor-pointer shadow-sm relative group select-none border-0"
+            className="w-[180px] h-[44px] rounded-[100px] bg-element-black hover:opacity-90 text-primary-bg flex items-center justify-between pl-6 pr-2.5 font-sans text-[14px] font-bold transition-all active:scale-[0.98] cursor-pointer shadow-sm relative group select-none border-0"
             aria-label="Get in touch"
           >
             <span>Get in touch</span>
-            <span className="w-7 h-7 rounded-full bg-white flex items-center justify-center text-element-black transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+            <span className="w-7 h-7 rounded-full bg-primary-bg flex items-center justify-center text-element-black transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
               <ArrowLeft size={14} className="rotate-[135deg]" strokeWidth={2.8} />
             </span>
           </button>

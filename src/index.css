@@ -59,6 +59,14 @@
   --color-card-bg: #1a1a1a;
   --color-gradient-start: #e0e0e0;
   --color-gradient-end: #666666;
+
+  --icon-filter: brightness(0) invert(1);
+
+  --color-contribution-empty: #1f1f1f;
+  --color-contribution-light: #166534;
+  --color-contribution-medium-light: #22c55e;
+  --color-contribution-medium: #4ade80;
+  --color-contribution-dark: #86efac;
 }
 
 /* Light Mode Colors */
@@ -70,6 +78,14 @@
   --color-card-bg: #F2F2F2;
   --color-gradient-start: #403F3F;
   --color-gradient-end: #B3B3B3;
+
+  --icon-filter: none;
+
+  --color-contribution-empty: #f5f5f7;
+  --color-contribution-light: #dcfce7;
+  --color-contribution-medium-light: #bbf7d0;
+  --color-contribution-medium: #86efac;
+  --color-contribution-dark: #4ade80;
 }
 
 /* Global resets */

@@ -63,15 +63,15 @@ export default function GithubContributionCard() {
 
     // Custom light-theme green color mapping for premium monochromatic/green design
     const getContributionColor = (count: number) => {
-        if (count === 0) return '#f5f5f7'; // Empty cell color matching secondary bg
-        if (count <= 2) return '#dcfce7';  // Light green
-        if (count <= 4) return '#bbf7d0';  // Medium-light green
-        if (count <= 6) return '#86efac';  // Medium green
-        return '#4ade80';                 // Darker green
+        if (count === 0) return 'var(--color-contribution-empty)'; // Empty cell color matching secondary bg
+        if (count <= 2) return 'var(--color-contribution-light)';  // Light green
+        if (count <= 4) return 'var(--color-contribution-medium-light)';  // Medium-light green
+        if (count <= 6) return 'var(--color-contribution-medium)';  // Medium green
+        return 'var(--color-contribution-dark)';                 // Darker green
     };
 
     return (
-        <div className="w-full rounded-xl border border-[#e5e4e7]/60 bg-white p-3.5 select-none transition-all duration-300 hover:border-[#e5e4e7]/80 hover:shadow-sm">
+        <div className="w-full rounded-xl border border-element-black/10 bg-card-bg p-3.5 select-none transition-all duration-300 hover:border-element-black/20 hover:shadow-sm">
             {/* Header section */}
             <div className="mb-3 flex items-start justify-between">
                 <div>
@@ -87,7 +87,7 @@ export default function GithubContributionCard() {
                     href="https://github.com/Sambhav10-10"
                     target="_blank"
                     rel="noreferrer"
-                    className="text-[10px] font-sans font-medium text-text-subheading/60 hover:text-element-black transition-colors"
+                    className="text-[10px] font-sans font-semibold text-text-heading hover:text-element-black transition-colors"
                 >
                     View Profile →
                 </a>
@@ -110,7 +110,7 @@ export default function GithubContributionCard() {
                     {contributions.map((day) => (
                         <div
                             key={day.date}
-                            className="h-[8px] w-[8px] rounded-[1.5px] border border-black/5"
+                            className="h-[8px] w-[8px] rounded-[1.5px] border border-element-black/10"
                             style={{ backgroundColor: getContributionColor(day.contributionCount) }}
                             title={`${day.contributionCount} contributions on ${day.date}`}
                         />
@@ -121,11 +121,26 @@ export default function GithubContributionCard() {
             {/* Color scale legend */}
             <div className="mt-2.5 flex items-center justify-end gap-1 text-[9px] text-text-subheading/50">
                 <span>Less</span>
-                <div className="h-2 w-2 rounded-[1px] bg-[#f5f5f7] border border-[#e5e4e7]/40" />
-                <div className="h-2 w-2 rounded-[1px] bg-[#dcfce7]" />
-                <div className="h-2 w-2 rounded-[1px] bg-[#bbf7d0]" />
-                <div className="h-2 w-2 rounded-[1px] bg-[#86efac]" />
-                <div className="h-2 w-2 rounded-[1px] bg-[#4ade80]" />
+                <div
+                    className="h-2 w-2 rounded-[1px] border border-element-black/10"
+                    style={{ backgroundColor: 'var(--color-contribution-empty)' }}
+                />
+                <div
+                    className="h-2 w-2 rounded-[1px] border border-element-black/10"
+                    style={{ backgroundColor: 'var(--color-contribution-light)' }}
+                />
+                <div
+                    className="h-2 w-2 rounded-[1px] border border-element-black/10"
+                    style={{ backgroundColor: 'var(--color-contribution-medium-light)' }}
+                />
+                <div
+                    className="h-2 w-2 rounded-[1px] border border-element-black/10"
+                    style={{ backgroundColor: 'var(--color-contribution-medium)' }}
+                />
+                <div
+                    className="h-2 w-2 rounded-[1px] border border-element-black/10"
+                    style={{ backgroundColor: 'var(--color-contribution-dark)' }}
+                />
                 <span>More</span>
             </div>
         </div>

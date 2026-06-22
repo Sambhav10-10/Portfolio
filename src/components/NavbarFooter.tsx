@@ -10,12 +10,26 @@ const NavbarFooter: React.FC = () => {
   const socialLinks = [
     {
       url: SITE_CONFIG.socials.github,
-      icon: <img src={githubIcon} className="w-[18px] h-[18px]" alt="GitHub" />,
+     icon: (
+  <img
+    src={githubIcon}
+    className="w-[18px] h-[18px]"
+    style={{ filter: 'var(--icon-filter)' }}
+    alt="GitHub"
+  />
+),
       label: 'GitHub'
     },
     {
       url: SITE_CONFIG.socials.linkedin,
-      icon: <img src={linkedinIcon} className="w-[18px] h-[18px]" alt="LinkedIn" />,
+      icon: (
+        <img
+          src={linkedinIcon}
+          className="w-[18px] h-[18px]"
+          style={{ filter: 'var(--icon-filter)' }}
+          alt="LinkedIn"
+        />
+      ),
       label: 'LinkedIn'
     },
     {

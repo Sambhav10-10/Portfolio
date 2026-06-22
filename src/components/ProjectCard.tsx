@@ -18,9 +18,9 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
-    <div className="bg-card-bg px-5 py-5 md:p-8 rounded-[20px] border border-[#e5e4e7]/40 flex flex-col md:flex-row gap-8 items-stretch max-w-[1215px] mx-auto hover:shadow-md transition-all duration-300 ">
+    <div className="bg-card-bg px-5 py-5 md:p-8 rounded-[20px] border border-element-black/10 flex flex-col md:flex-row gap-8 items-stretch max-w-[1215px] mx-auto hover:shadow-md transition-all duration-300">
       {/* Left Column: Portrait Image */}
-      <div className="w-full md:w-[42%] min-h-[320px] md:min-h-[440px] rounded-xl overflow-hidden relative select-none bg-neutral-50 flex items-center justify-center">
+      <div className="w-full md:w-[42%] min-h-[320px] md:min-h-[440px] rounded-xl overflow-hidden relative select-none bg-card-bg flex items-center justify-center">
         <img
           src={project.imageUrl}
           className="w-full h-full object-contain"
@@ -51,7 +51,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             {project.tags.map((tag, idx) => (
               <span
                 key={idx}
-                className="px-3 py-1 bg-white border border-[#e5e4e7] text-text-subheading rounded-full text-[11.5px] font-medium transition-all hover:bg-neutral-50 select-none"
+                className="px-3 py-1 bg-card-bg border border-element-black/10 text-text-heading rounded-full text-[11.5px] font-medium transition-all hover:border-element-black/20 select-none"
               >
                 {tag}
               </span>
@@ -65,9 +65,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#1e1d1d] hover:bg-[#0c0c0c] text-white rounded-full font-sans text-xs font-semibold transition-all shadow-sm active:scale-[0.98] cursor-pointer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-element-black hover:opacity-90 text-primary-bg rounded-full font-sans text-xs font-semibold transition-all shadow-sm active:scale-[0.98] cursor-pointer"
             >
-              <img src={githubIcon} className="w-[24px] h-[24px] invert" alt="GitHub repository" />
+              <img
+                src={githubIcon}
+                className="w-[24px] h-[24px] invert"
+                alt="GitHub repository"
+              />
               Visit GitHub
             </a>
 
@@ -77,7 +81,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 href={project.liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-b from-white to-[#f0f0f0] border border-[#d2d2d5] hover:to-[#e4e4e6] text-text-heading rounded-full font-sans text-xs font-semibold transition-all shadow-sm active:scale-[0.98] cursor-pointer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-card-bg border border-element-black/10 hover:border-element-black/20 text-text-heading rounded-full font-sans text-xs font-semibold transition-all shadow-sm active:scale-[0.98] cursor-pointer"
               >
                 <ExternalLink size={16} strokeWidth={2.2} />
                 Live Site

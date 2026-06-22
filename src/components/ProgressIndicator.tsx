@@ -33,7 +33,7 @@ const ProgressIndicator: React.FC = () => {
 
       <div className="relative w-full">
         {/* Horizontal Dashed Line (connector) */}
-        <div className="absolute top-[30px] left-[126px] right-[126px] h-0 border-t-2 border-dashed border-text-subheading/35 hidden lg:block" />
+        <div className="absolute top-[30px] left-[126px] right-[126px] h-0 border-t-2 border-dashed border-element-black/20 hidden lg:block" />
 
         {/* Steps Container */}
         <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-12 lg:gap-6 w-full">
@@ -43,12 +43,12 @@ const ProgressIndicator: React.FC = () => {
               className="w-full max-w-[260px] lg:w-[201px] flex flex-col items-center gap-3 relative z-10"
             >
               {/* Icon Circle */}
-              <div className="w-[60px] h-[60px] flex items-center justify-center bg-white rounded-[30px] border-2 border-text-subheading p-4 shadow-sm hover:scale-105 transition-all duration-300 select-none">
+              <div className="w-[60px] h-[60px] flex items-center justify-center bg-card-bg rounded-[30px] border border-element-black/10 p-4 shadow-sm hover:scale-105 transition-all duration-300 select-none">
                 {step.icon}
               </div>
 
               {/* Title */}
-              <h3 className="font-sans font-semibold text-[20px] text-black leading-tight mt-1">
+              <h3 className="font-sans font-semibold text-[20px] text-text-heading leading-tight mt-1">
                 {step.title}
               </h3>
 
