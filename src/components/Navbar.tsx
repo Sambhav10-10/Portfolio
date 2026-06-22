@@ -81,8 +81,8 @@ const Navbar: React.FC<NavbarProps> = ({ currentTab, setCurrentTab, scrollRef, o
               onClick={() => {
                 if (item.id === 'cv') {
                   const link = document.createElement('a');
-                  link.href = '/Resume_Sambhav_Koshta.pdf';
-                  link.download = 'Sambhav_Koshta_Resume.pdf';
+                  link.href = '/Sambhav_Koshta_resume.pdf';
+                  link.download = 'Sambhav_Koshta_resume.pdf';
                   document.body.appendChild(link);
                   link.click();
                   document.body.removeChild(link);
