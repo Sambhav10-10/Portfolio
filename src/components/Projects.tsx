@@ -6,7 +6,7 @@ import turfmateCover from '../assets/jerseyhub-cover.webp'
 import identraCover from '../assets/envoy-cover-2.webp'
 import mlCover from '../assets/relay-cover.webp'
 import docnestCover from '../assets/docnest-cover.webp'
-import resumecraftCover from '../assets/resumecraft-cover.webp'
+import resumecraftCover from '../assets/ai-cover.webp'
 const Projects: React.FC = () => {
   const projectList: ProjectItem[] = [
     {
@@ -57,24 +57,24 @@ const Projects: React.FC = () => {
       imageUrl: docnestCover
     },
     {
-  title: 'ResumeCraft — AI-Powered Resume Builder',
-  description1:
-    'A full-stack AI-powered resume builder that enables users to generate professional, customized resumes through Gemini API integration, with real-time preview, secure authentication via Clerk, and shareable resume links.',
-  description2:
-    'Built with Next.js, Node.js, and MongoDB, featuring Clerk-based user authentication, Gemini AI resume generation, live form-driven preview, editable sections for experience, education, and skills, and a fully responsive UI across all devices.',
-  tags: [
-    'Next.js',
-    'Node.js',
-    'MongoDB',
-    'Clerk',
-    'Gemini API',
-    'Tailwind CSS',
-    'REST API'
-  ],
-  githubUrl: SITE_CONFIG.projects.resumecraft.github,
-  liveUrl: SITE_CONFIG.projects.resumecraft.live,
-  imageUrl: resumecraftCover
-}
+      title: 'ResumeCraft — AI-Powered Resume Builder',
+      description1:
+        'A full-stack AI-powered resume builder that enables users to generate professional, customized resumes through Gemini API integration, with real-time preview, secure authentication via Clerk, and shareable resume links.',
+      description2:
+        'Built with Next.js, Node.js, and MongoDB, featuring Clerk-based user authentication, Gemini AI resume generation, live form-driven preview, editable sections for experience, education, and skills, and a fully responsive UI across all devices.',
+      tags: [
+        'Next.js',
+        'Node.js',
+        'MongoDB',
+        'Clerk',
+        'Gemini API',
+        'Tailwind CSS',
+        'REST API'
+      ],
+      githubUrl: SITE_CONFIG.projects.resumecraft.github,
+      liveUrl: SITE_CONFIG.projects.resumecraft.live,
+      imageUrl: resumecraftCover
+    }
   ]
 
   return (
