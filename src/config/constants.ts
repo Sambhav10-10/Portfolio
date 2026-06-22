@@ -28,6 +28,10 @@ export const SITE_CONFIG = {
     docnest: {
       github: 'https://github.com/Sambhav10-10/DocNest', // Update with actual repo
       live: 'https://doc-nest-m1ku.vercel.app/' // Add live link if available
+    },
+    resumecraft: {
+      github: 'https://github.com/Sambhav10-10/ai-resume-builder', // Update with actual repo
+      live: 'https://ai-resume-builder-ashen-chi.vercel.app/' // Add live link if available
     }
   }
 }
