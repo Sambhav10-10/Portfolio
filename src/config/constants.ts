@@ -32,6 +32,10 @@ export const SITE_CONFIG = {
     resumecraft: {
       github: 'https://github.com/Sambhav10-10/ai-resume-builder', // Update with actual repo
       live: 'https://ai-resume-builder-ashen-chi.vercel.app/' // Add live link if available
+    },
+    joblens: {
+      github: 'https://github.com/Sambhav10-10/job-tracker', // Update with actual repo
+      live: 'https://job-tracker-6lxp.onrender.com' // Add live link if available
     }
   }
 }

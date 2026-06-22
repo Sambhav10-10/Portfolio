@@ -7,6 +7,7 @@ import identraCover from '../assets/envoy-cover-2.webp'
 import mlCover from '../assets/relay-cover.webp'
 import docnestCover from '../assets/docnest-cover.webp'
 import resumecraftCover from '../assets/ai-cover.webp'
+import joblensCover from '../assets/job-cover.webp'
 const Projects: React.FC = () => {
   const projectList: ProjectItem[] = [
     {
@@ -74,7 +75,16 @@ const Projects: React.FC = () => {
       githubUrl: SITE_CONFIG.projects.resumecraft.github,
       liveUrl: SITE_CONFIG.projects.resumecraft.live,
       imageUrl: resumecraftCover
-    }
+    },
+    {
+  title: 'Job Application Tracker',
+  description1: 'A full-stack MERN application for managing job applications with secure JWT authentication, MVC architecture, and global state management via Context API + useReducer. Features paginated job listings, advanced search with multi-filter support, and switchable statistics charts.',
+  description2: 'Built REST API with Express and MongoDB for full CRUD operations on job entries. Integrated Gemini AI to auto-generate tailored cover letters per job posting, with profile management and responsive design. Deployed on Render.',
+  tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT','Axios', 'Recharts', 'Render'],
+  githubUrl: SITE_CONFIG.projects.joblens.github,
+  liveUrl: SITE_CONFIG.projects.joblens.live,
+  imageUrl: joblensCover
+}
   ]
 
   return (
