@@ -36,6 +36,10 @@ export const SITE_CONFIG = {
     joblens: {
       github: 'https://github.com/Sambhav10-10/job-tracker', // Update with actual repo
       live: 'https://job-tracker-6lxp.onrender.com' // Add live link if available
+    },
+    incomeclassifier: {
+      github: 'https://github.com/Sambhav10-10/income-census-classification', // Update with actual repo
+      live: 'https://adult-census-income-classifications.streamlit.app/' // Add live link if available
     }
   }
 }

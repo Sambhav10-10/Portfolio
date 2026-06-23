@@ -8,6 +8,7 @@ import mlCover from '../assets/relay-cover.webp'
 import docnestCover from '../assets/docnest-cover.webp'
 import resumecraftCover from '../assets/ai-cover.webp'
 import joblensCover from '../assets/job-cover.webp'
+import incomeClassifierCover from '../assets/income-cover.webp'
 const Projects: React.FC = () => {
   const projectList: ProjectItem[] = [
     {
@@ -77,14 +78,23 @@ const Projects: React.FC = () => {
       imageUrl: resumecraftCover
     },
     {
-  title: 'Job Application Tracker',
-  description1: 'A full-stack MERN application for managing job applications with secure JWT authentication, MVC architecture, and global state management via Context API + useReducer. Features paginated job listings, advanced search with multi-filter support, and switchable statistics charts.',
-  description2: 'Built REST API with Express and MongoDB for full CRUD operations on job entries. Integrated Gemini AI to auto-generate tailored cover letters per job posting, with profile management and responsive design. Deployed on Render.',
-  tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT','Axios', 'Recharts', 'Render'],
-  githubUrl: SITE_CONFIG.projects.joblens.github,
-  liveUrl: SITE_CONFIG.projects.joblens.live,
-  imageUrl: joblensCover
-}
+      title: 'Job Application Tracker',
+      description1: 'A full-stack MERN application for managing job applications with secure JWT authentication, MVC architecture, and global state management via Context API + useReducer. Features paginated job listings, advanced search with multi-filter support, and switchable statistics charts.',
+      description2: 'Built REST API with Express and MongoDB for full CRUD operations on job entries. Integrated Gemini AI to auto-generate tailored cover letters per job posting, with profile management and responsive design. Deployed on Render.',
+      tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Axios', 'Recharts', 'Render'],
+      githubUrl: SITE_CONFIG.projects.joblens.github,
+      liveUrl: SITE_CONFIG.projects.joblens.live,
+      imageUrl: joblensCover
+    },
+    {
+      title: 'Adult Census Income Classifier',
+      description1: 'A full ML pipeline (EDA → SMOTE oversampling → RFECV feature selection → model training) comparing Random Forest and Logistic Regression on the UCI Adult Census dataset for binary income prediction. Handled class imbalance, sparse matrix preprocessing, and feature selection with 85 final features from 104.',
+      description2: 'Deployed an interactive Streamlit app with live inference, per-model evaluation (AUC, confusion matrix, ROC curve), and side-by-side model comparison with feature importance visualization. Live on Streamlit Cloud.',
+      tags: ['Python', 'Scikit-learn', 'Streamlit', 'Pandas', 'NumPy', 'Matplotlib', 'SMOTE', 'Random Forest', 'Logistic Regression'],
+      githubUrl: SITE_CONFIG.projects.incomeclassifier.github,
+      liveUrl: SITE_CONFIG.projects.incomeclassifier.live,
+      imageUrl: incomeClassifierCover
+    }
   ]
 
   return (
